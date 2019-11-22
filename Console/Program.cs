@@ -16,9 +16,10 @@ namespace ConsoleSample
             EntityRepository entityRepository = new EntityRepository();
             Entity myEntity = entityRepository.GetByID(Guid.NewGuid());
 
-            myEntity.Name = "Tom";
+            myEntity.Name = "Suma";
             Console.WriteLine("New entity ID: " + myEntity.ID.ToString());
             Console.WriteLine("New entity Name: " + myEntity.Name);
+            Console.ReadKey();
 
         }
     }
